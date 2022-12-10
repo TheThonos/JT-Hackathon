@@ -3,7 +3,7 @@ extends Node2D
 signal done
 
 export(String, 'red', 'blue', 'yellow', 'purple') var color = 'red'
-var speed: int = 1
+var speed: int = 2
 var playing: bool = false
 var road: TileMap
 var car: int = 1
