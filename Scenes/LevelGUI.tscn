@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/LevelGUI.gd" type="Script" id=1]
+
+[node name="LevelGUI" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="LeftBar" type="ColorRect" parent="."]
+anchor_bottom = 1.0
+margin_right = 80.0
+
+[node name="RightBar" type="ColorRect" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -80.0
+
+[node name="Start" type="Button" parent="."]
+margin_left = 8.0
+margin_top = 80.0
+margin_right = 72.0
+margin_bottom = 144.0
+text = "Start"
+
+[node name="Menu" type="Button" parent="."]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 72.0
+margin_bottom = 72.0
+text = "Menu"
+
+[node name="Speed" type="Button" parent="."]
+margin_left = 8.0
+margin_top = 152.0
+margin_right = 72.0
+margin_bottom = 216.0
+text = "1x"
+
+[connection signal="pressed" from="Start" to="." method="_on_Start_pressed"]
