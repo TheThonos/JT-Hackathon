@@ -36,4 +36,25 @@ margin_right = 72.0
 margin_bottom = 216.0
 text = "1x"
 
+[node name="Car1" type="Button" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -72.0
+margin_top = 8.0
+margin_right = -8.0
+margin_bottom = 72.0
+text = "Car 1"
+
+[node name="Car2" type="Button" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -72.0
+margin_top = 80.0
+margin_right = -8.0
+margin_bottom = 144.0
+text = "Car 2"
+
 [connection signal="pressed" from="Start" to="." method="_on_Start_pressed"]
+[connection signal="pressed" from="Speed" to="." method="_on_Speed_pressed"]
+[connection signal="pressed" from="Car1" to="." method="_on_Car1_pressed"]
+[connection signal="pressed" from="Car2" to="." method="_on_Car2_pressed"]

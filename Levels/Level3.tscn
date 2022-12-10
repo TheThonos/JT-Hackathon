@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/Car.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/LevelGUI.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Road.tscn" type="PackedScene" id=3]
+
+[node name="Level3" type="Node"]
+
+[node name="Car" parent="." instance=ExtResource( 1 )]
+position = Vector2( 417, 621 )
+
+[node name="Car2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 261, 463 )
+color = "yellow"
+
+[node name="LevelGUI" parent="." instance=ExtResource( 2 )]
+
+[node name="Road" parent="." instance=ExtResource( 3 )]
+tile_data = PoolIntArray( 589841, 0, 0, 655377, 0, 0, 720906, 0, 65536, 720907, -1610612736, 0, 720908, -1610612736, 0, 720909, -1610612736, 0, 720910, -1610612736, 0, 720911, -1610612736, 0, 720912, -1610612736, 0, 720913, -1610612736, 65537, 786442, 0, 0, 786449, 0, 0, 851978, 0, 0, 851985, 0, 0, 917510, -1610612736, 0, 917511, -1610612736, 0, 917512, -1610612736, 0, 917513, -1610612736, 0, 917514, 0, 1, 917515, -1610612736, 0, 917516, -1610612736, 0, 917517, -1610612736, 65536, 983050, 0, 0, 983053, -1073741824, 65536, 983054, -1610612736, 65536, 1048586, 0, 0, 1048590, 0, 0, 1114122, -1073741824, 65537, 1114123, -1610612736, 0, 1114124, -1610612736, 0, 1114125, -1610612736, 0, 1114126, 1610612736, 65536, 1179658, 0, 0 )
